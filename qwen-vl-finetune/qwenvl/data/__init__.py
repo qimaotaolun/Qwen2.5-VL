@@ -27,7 +27,7 @@ VIDEOCHATGPT = {
 }
 
 MY_DATASET = {
-    "annotation_path": "/data/dataset/foren-tmp-data/_output_/train_pack.json",
+    "annotation_path": "/data/dataset/foren-tmp-data/_output_/train.json",
     "data_path": "/data/dataset/foren-tmp-data/_output_/training_data",
 }
 
