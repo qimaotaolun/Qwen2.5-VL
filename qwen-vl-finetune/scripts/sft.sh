@@ -32,12 +32,12 @@ args="
     --model_name_or_path "${llm}" \
     --dataset_use ${datasets} \
     --data_flatten True \
-    --tune_mm_vision False \
+    --tune_mm_vision True \
     --tune_mm_mlp True \
     --tune_mm_llm True \
     --bf16 \
     --output_dir ${output_dir} \
-    --num_train_epochs 0.5 \
+    --num_train_epochs 0.01 \
     --per_device_train_batch_size ${batch_size} \
     --per_device_eval_batch_size $((batch_size*2)) \
     --gradient_accumulation_steps ${grad_accum_steps} \
