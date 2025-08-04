@@ -60,7 +60,7 @@ args="
     --report_to wandb"
 
 # Launch training
-torchrun --nproc_per_node=${NPROC_PER_NODE} \
-         --master_addr=${MASTER_ADDR} \
-         --master_port=${MASTER_PORT} \
+torchrun --nproc-per-node=${NPROC_PER_NODE} \
+         --master-addr=${MASTER_ADDR} \
+         --master-port=${MASTER_PORT} \
          ${entry_file} ${args}
